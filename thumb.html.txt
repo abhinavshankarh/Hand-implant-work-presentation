@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implant Identification from X-Rays</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for navigation */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-lg py-4 px-6 fixed w-full z-10 top-0 rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-blue-700">ImplantID</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Home</a></li>
+                    <li><a href="#aim" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Aim</a></li>
+                    <li><a href="#thumb-implants" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Thumb Implants</a></li>
+                    <li><a href="#finger-implants" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Finger Implants</a></li>
+                    <li><a href="#methodology" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Methodology</a></li>
+                    <li><a href="#results" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Results</a></li>
+                    <li><a href="#conclusion" class="text-gray-600 hover:text-blue-700 font-medium transition-colors duration-300">Conclusion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20"> <!-- Padding to account for fixed header -->
+
+        <!-- Home/Hero Section -->
+        <section id="home" class="relative bg-blue-700 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl shadow-xl">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://placehold.co/1920x1080/0000FF/FFFFFF?text=X-Ray+Background');"></div>
+            <div class="container mx-auto text-center relative z-10 px-4">
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    Identification of Make and Model of Implants from X-Rays
+                </h2>
+                <p class="text-xl md:text-2xl font-light mb-8">
+                    Leveraging Deep Learning for precise implant identification in orthopaedics.
+                </p>
+                <a href="#aim" class="inline-block bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Learn More
+                </a>
+            </div>
+        </section>
+
+        <!-- AIM Section -->
+        <section id="aim" class="py-16 md:py-24 bg-white rounded-xl shadow-lg mx-auto my-12 max-w-6xl px-6">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <h3 class="text-4xl font-bold text-blue-700 mb-6">Our Research Aim</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        The core objective of this research is to develop a robust deep learning model utilizing
+                        <span class="font-semibold text-blue-600">Convolutional Neural Networks (CNNs)</span>.
+                        This model is designed to accurately identify and detect various types of
+                        <span class="font-semibold text-blue-600">thumb arthroplasty implants</span> directly from X-ray images.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our study specifically focuses on employing pre-trained CNN models, such as
+                        <span class="font-semibold text-blue-600">VGG16 and Inception V3</span>,
+                        with a transfer learning approach. This methodology enables the precise classification of diverse implant models,
+                        providing invaluable assistance to surgeons during critical preoperative planning phases.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center">
+                    <!-- Placeholder for an abstract image or icon representing AI/Deep Learning -->
+                    <img src="https://placehold.co/400x300/ADD8E6/000000?text=Deep+Learning+Concept" alt="Deep Learning Concept" class="rounded-2xl shadow-xl border-4 border-blue-200">
+                </div>
+            </div>
+        </section>
+
+        <!-- Thumb Implants Section -->
+        <section id="thumb-implants" class="py-16 md:py-24 bg-blue-50 rounded-xl shadow-lg mx-auto my-12 max-w-6xl px-6">
+            <div class="container mx-auto">
+                <h3 class="text-4xl font-bold text-blue-700 text-center mb-12">Thumb Implants: Data and Examples</h3>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md mb-12">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-6">Implant Data Overview</h4>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                            <thead class="bg-blue-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tl-lg">Implant Model</th>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Initial Images</th>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Initial Training Images (~70%)</th>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tr-lg">Training Images After Augmentation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">ARPE</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">19</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">14</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">420</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Barun Cutter</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">3</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">2</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">60</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Elektra</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">14</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">10</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">300</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Guepar</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">7</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">5</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">150</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Ivory</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">13</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">10</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">300</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Maia</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">57</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">43</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">1290</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Moje</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">8</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">6</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">180</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Moovis</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">9</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">6</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">180</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Motec</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">2</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">1</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">30</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Roseland</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">8</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">5</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">150</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Rubis II</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">4</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">2</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">60</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">SR TMC</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">4</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">2</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">60</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">TOUCH</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">47</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">35</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">1350</td>
+                                </tr>
+                                <tr class="bg-blue-50 font-bold text-blue-800">
+                                    <td class="py-3 px-4 whitespace-nowrap rounded-bl-lg">Total</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">195</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">141</td>
+                                    <td class="py-3 px-4 whitespace-nowrap rounded-br-lg">4530</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Example X-Ray Images of Thumb Implants</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Placeholder images for Thumb Implants -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+1" alt="Thumb Implant X-Ray 1" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">ARPE</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+2" alt="Thumb Implant X-Ray 2" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Barun Cutter</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+3" alt="Thumb Implant X-Ray 3" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Elektra</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+4" alt="Thumb Implant X-Ray 4" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Guepar</p>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+5" alt="Thumb Implant X-Ray 5" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Ivory</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+6" alt="Thumb Implant X-Ray 6" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Maia</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+7" alt="Thumb Implant X-Ray 7" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Moje</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+8" alt="Thumb Implant X-Ray 8" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Moovis</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+9" alt="Thumb Implant X-Ray 9" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Motec</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+10" alt="Thumb Implant X-Ray 10" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Roseland</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+11" alt="Thumb Implant X-Ray 11" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">SR TMC</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+12" alt="Thumb Implant X-Ray 12" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Rubis II</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Thumb+Implant+13" alt="Thumb Implant X-Ray 13" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Touch</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finger Implants Section -->
+        <section id="finger-implants" class="py-16 md:py-24 bg-white rounded-xl shadow-lg mx-auto my-12 max-w-6xl px-6">
+            <div class="container mx-auto">
+                <h3 class="text-4xl font-bold text-blue-700 text-center mb-12">Finger Implants: Data and Examples</h3>
+
+                <div class="bg-blue-50 p-8 rounded-2xl shadow-md mb-12">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-6">Implant Data Overview</h4>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                            <thead class="bg-blue-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tl-lg">Implant Model</th>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Initial Images</th>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider">Initial Training Images (~70%)</th>
+                                    <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tr-lg">Training Images After Augmentation</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Aptis</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">31</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">21</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Ascencion PyroCarbon</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">18</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">12</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Avanta PIP Silicone Implant</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">16</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">11</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">CapFlex PIP</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">21</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">14</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">NeuFlex Implant</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">18</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">12</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Swanson Implant</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">15</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">10</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-3 px-4 whitespace-nowrap">Tactys PIP Implant</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">23</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">16</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">500</td>
+                                </tr>
+                                <tr class="bg-blue-50 font-bold text-blue-800">
+                                    <td class="py-3 px-4 whitespace-nowrap rounded-bl-lg">Total</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">142</td>
+                                    <td class="py-3 px-4 whitespace-nowrap">80</td>
+                                    <td class="py-3 px-4 whitespace-nowrap rounded-br-lg">3500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Example X-Ray Images of Finger Implants</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Placeholder images for Finger Implants -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+1" alt="Finger Implant X-Ray 1" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Aptis</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+2" alt="Finger Implant X-Ray 2" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Ascencion PyroCarbon</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+3" alt="Finger Implant X-Ray 3" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Avanta PIP Silicone</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+4" alt="Finger Implant X-Ray 4" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">CapFlex PIP</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+5" alt="Finger Implant X-Ray 5" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">NeuFlex Implant</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+6" alt="Finger Implant X-Ray 6" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Swanson Implant</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/400x300/D1E9FF/000000?text=Finger+Implant+7" alt="Finger Implant X-Ray 7" class="w-full h-48 object-cover">
+                        <p class="p-4 text-center font-medium text-blue-700">Tactys PIP Implant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="py-16 md:py-24 bg-blue-50 rounded-xl shadow-lg mx-auto my-12 max-w-6xl px-6">
+            <div class="container mx-auto">
+                <h3 class="text-4xl font-bold text-blue-700 text-center mb-12">Our Deep Learning Methodology</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-2xl shadow-md">
+                        <h4 class="text-2xl font-semibold text-gray-800 mb-6">Pre-processing Techniques</h4>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tl-lg">Augmentation Technique</th>
+                                        <th class="py-3 px-4 text-left text-sm font-semibold text-blue-700 uppercase tracking-wider rounded-tr-lg">Parameters</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Horizontal Flipping</td>
+                                        <td class="py-3 px-4">Flips image and bounding box about the X-axis</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Vertical Flipping</td>
+                                        <td class="py-3 px-4">Flips image and bounding box about the Y-axis</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Rotation (positive/clockwise)</td>
+                                        <td class="py-3 px-4">Rotates image and bounding box 3,6,9,12 degree clockwise</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Rotation (negative/counter clockwise)</td>
+                                        <td class="py-3 px-4">Rotates image and bounding box + 3,6,9,12 degree counter clockwise</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Average blurring</td>
+                                        <td class="py-3 px-4">Image smoothing using an average filter of kernel size 11</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Raising Hue</td>
+                                        <td class="py-3 px-4">Raises the hue value to a power of 4</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">CLAHE</td>
+                                        <td class="py-3 px-4">Equalizes histogram of image</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap">Inversion</td>
+                                        <td class="py-3 px-4">Transforms each pixel value by 255 minus pixel value</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 whitespace-nowrap rounded-bl-lg">Original Image</td>
+                                        <td class="py-3 px-4 rounded-br-lg">Keeps the original image</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-md flex flex-col items-center justify-center">
+                        <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Architecture Diagram (VGG-16)</h4>
+                        <img src="https://placehold.co/600x400/D1E9FF/000000?text=Architecture+Diagram" alt="Architecture Diagram" class="w-full max-w-md rounded-xl shadow-lg border-2 border-blue-200">
+                        <p class="mt-4 text-gray-600 text-center">
+                            Visual representation of our VGG-16 based deep learning architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="py-16 md:py-24 bg-white rounded-xl shadow-lg mx-auto my-12 max-w-6xl px-6">
+            <div class="container mx-auto">
+                <h3 class="text-4xl font-bold text-blue-700 text-center mb-12">Key Results and Performance</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+                    <div class="bg-blue-50 p-8 rounded-2xl shadow-md flex flex-col items-center">
+                        <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Train and Test Loss</h4>
+                        <img src="https://placehold.co/600x400/D1E9FF/000000?text=Loss+Curve" alt="Loss Curve" class="w-full max-w-md rounded-xl shadow-lg border-2 border-blue-200">
+                        <p class="mt-4 text-gray-600 text-center">
+                            Visualization of training and testing loss over epochs.
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-8 rounded-2xl shadow-md flex flex-col items-center">
+                        <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Train and Test Accuracy</h4>
+                        <img src="https://placehold.co/600x400/D1E9FF/000000?text=Accuracy+Curve" alt="Accuracy Curve" class="w-full max-w-md rounded-xl shadow-lg border-2 border-blue-200">
+                        <p class="mt-4 text-gray-600 text-center">
+                            Visualization of training and testing accuracy over epochs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+                    <div class="bg-blue-50 p-8 rounded-2xl shadow-md flex flex-col items-center">
+                        <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Flow Diagram for Thumb Implants</h4>
+                        <img src="https://placehold.co/600x400/D1E9FF/000000?text=Thumb+Flow+Diagram" alt="Thumb Flow Diagram" class="w-full max-w-md rounded-xl shadow-lg border-2 border-blue-200">
+                        <p class="mt-4 text-gray-600 text-center">
+                            Illustrates the classification process for thumb implants, achieving 95.9% accuracy.
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-8 rounded-2xl shadow-md flex flex-col items-center">
+                        <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Flow Diagram for Finger Implants</h4>
+                        <img src="https://placehold.co/600x400/D1E9FF/000000?text=Finger+Flow+Diagram" alt="Finger Flow Diagram" class="w-full max-w-md rounded-xl shadow-lg border-2 border-blue-200">
+                        <p class="mt-4 text-gray-600 text-center">
+                            Illustrates the classification process for finger implants, achieving 91% accuracy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-2xl shadow-md flex flex-col items-center">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Confusion Matrix</h4>
+                    <img src="https://placehold.co/800x800/D1E9FF/000000?text=Confusion+Matrix" alt="Confusion Matrix" class="w-full max-w-3xl rounded-xl shadow-lg border-2 border-blue-200">
+                    <p class="mt-4 text-gray-600 text-center">
+                        Detailed performance metrics for implant classification.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="py-16 md:py-24 bg-white rounded-xl shadow-lg mx-auto my-12 max-w-6xl px-6">
+            <div class="container mx-auto text-center">
+                <h3 class="text-4xl font-bold text-blue-700 mb-8">Conclusion and Future Directions</h3>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    In this study, a <span class="font-semibold text-blue-600">VGG16-based transfer learning model</span> was successfully developed,
+                    achieving a remarkable classification accuracy of <span class="font-semibold text-blue-600">95.9%</span> on the test set for thumb implants.
+                    This high accuracy powerfully demonstrates the effectiveness of transfer learning in overcoming
+                    image classification challenges, particularly when dealing with limited datasets.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Looking ahead, future work will concentrate on further optimizing the model's performance.
+                    This includes strategies such as <span class="font-semibold text-blue-600">increasing the diversity of the dataset</span>
+                    and <span class="font-semibold text-blue-600">experimenting with different deep learning architectures</span>.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed font-semibold text-blue-800">
+                    Overall, these results underscore the significant potential of transfer learning for
+                    achieving accurate image classification even in scenarios with smaller datasets, opening
+                    new avenues for medical imaging analysis.
+                </p>
+                <img src="https://placehold.co/400x250/D1E9FF/000000?text=Research+Image" alt="Research Desk" class="mx-auto mt-10 rounded-2xl shadow-xl border-4 border-blue-200">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-8 mt-12 rounded-t-3xl shadow-xl">
+        <div class="container mx-auto text-center">
+            <p class="text-xl font-semibold mb-4">Thank You</p>
+            <p class="text-sm">&copy; 2025 ImplantID Research. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
